@@ -15,6 +15,6 @@ public class Controller {
 
     @GetMapping("/saludo")
     public String saludar(@RequestParam(value = "nombre", defaultValue = "Mundo") String nombre) {
-        return "{\"mensaje\": \"Hola, " + nombre + "! Bienvenido al microservicio.\"}";
+        return "{\"mensaje\": \"Hola, " + nombre + ". Acceso autorizado exitosamente.\"}";
     }
 }
